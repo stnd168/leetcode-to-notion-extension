@@ -18,7 +18,7 @@
 ## ⚙️ 安裝與使用
 
 1. 下載或 clone 此專案：
-   git clone https://github.com/你的帳號/leetcode-to-notion-extension.git
+   git clone https://github.com/stnd168/leetcode-to-notion-extension.git
 2. 打開 Chrome → chrome://extensions/
 3. 開啟右上角「開發人員模式」
 4. 點選「載入未封裝項目」並選擇專案資料夾
@@ -29,6 +29,13 @@
 ![image](https://github.com/stnd168/leetcode-to-notion-extension/blob/main/info/option.png)
 
 ---
-## LeetCode 模板
+## 📖 LeetCode 模板
 我所使用的模板可以在[這裡](https://chrome-saturn-552.notion.site/277a5cc67b55808481fce692b517c255?v=277a5cc67b558144949c000ccdc1de77&source=copy_link)找到，歡迎使用。
 如果您喜歡使用自己的表格，請確保欄位設定與我的一致，以便整合。如果不一致，您可能需要相應地修改腳本。
+
+---
+## 📝 Notion 設定
+1. 請依照[Notion API 官方文件](https://developers.notion.com/docs/create-a-notion-integration)中的教學課程，從步驟 1 到步驟 3 進行操作。
+2. 複製您的Notion token 和 Database ID 至插件中。
+
+如果您有任何其他問題或需要額外協助，歡迎詢問我。
