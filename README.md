@@ -1,6 +1,6 @@
 # LeetCode → Notion (Chrome Extension)
 
-我製作了一個 Chrome 擴充功能，能夠將 **LeetCode 題目與程式碼** 一鍵保存到 **Notion Database**。
+我製作了一個 Chrome 擴充功能，能夠將 **LeetCode 題目與程式碼** 一鍵保存到 **指定的 Notion 表中**。
 
 ![image](https://github.com/stnd168/leetcode-to-notion-extension/blob/main/info/info.png)
 
