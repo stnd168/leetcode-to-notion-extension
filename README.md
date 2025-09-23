@@ -2,6 +2,8 @@
 
 我製作了一個 Chrome 擴充功能，能夠將 **LeetCode 題目與程式碼** 一鍵保存到 **Notion Database**。
 
+![image](https://github.com/stnd168/leetcode-to-notion-extension/blob/main/info/info.png)
+
 ---
 
 ## ✨ 功能
@@ -13,3 +15,20 @@
 - UI 正確回答可勾選「Correct」、並選擇 Importance / Review / Language
 ---
 
+## ⚙️ 安裝與使用
+
+1. 下載或 clone 此專案：
+   git clone https://github.com/你的帳號/leetcode-to-notion-extension.git
+2. 打開 Chrome → chrome://extensions/
+3. 開啟右上角「開發人員模式」
+4. 點選「載入未封裝項目」並選擇專案資料夾
+5. 點擊插件圖示，開啟 Options，輸入：
+6. Notion Token（從 Notion Developer Portal 取得），Database ID（你的 Notion Database ID）
+7. 打開任一 LeetCode 題目頁 → 點 Save，即可同步到 Notion 🎉
+
+![image](https://github.com/stnd168/leetcode-to-notion-extension/blob/main/info/option.png)
+
+---
+## LeetCode 模板
+我所使用的模板可以在[這裡](https://chrome-saturn-552.notion.site/277a5cc67b55808481fce692b517c255?v=277a5cc67b558144949c000ccdc1de77&source=copy_link)找到，歡迎使用。
+如果您喜歡使用自己的表格，請確保欄位設定與我的一致，以便整合。如果不一致，您可能需要相應地修改腳本。
