@@ -24,7 +24,7 @@
 3. 開啟右上角「開發人員模式」
 4. 點選「載入未封裝項目」並選擇專案資料夾
 5. 點擊插件圖示，開啟 Options，輸入：
-6. Notion Token（從 Notion Developer Portal 取得），Database ID（可由網址獲得: "https://www.notion.so/**Database_ID**?v=XXXXXXXX" ）
+6. Notion Token（從 Notion Developer Portal 取得），Database ID（可由網址獲得: https://www.notion.so/Database_ID?v=XXXXXXXX ）
 7. 打開任一 LeetCode 題目頁 → 點 Save，即可同步到 Notion 🎉
 
 ![image](https://github.com/stnd168/leetcode-to-notion-extension/blob/main/info/option.png)
