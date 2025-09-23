@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>LeetCode → Notion</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h2>LeetCode → Notion🚀</h2>
+  
+  <div id="meta"></div>
+
+  <label>Language</label>
+  <select id="lang">
+    <option>c++</option>
+    <option>python</option>
+    <option>java</option>
+  </select>
+
+  <div class="row">
+  <!-- Importance 選單 -->
+    <div>
+      <label>Importance</label> 
+      <select id="importance">
+        <option>基礎</option>
+        <option>必背</option>
+        <option>面試</option>
+        <option>難題</option>
+      </select>
+    </div>
+
+    <!-- Review 選單 -->
+    <div id="div_review">
+      <label>Review</label>
+      <select id="review">
+        <option>Don't understand</option>
+        <option>need review</option>
+        <option>Done</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Correct 勾選 -->
+  <!-- <label id="chk">
+    <input type="checkbox" id="correctChk" />
+    Correct
+  </label> -->
+  <label class="container">Correct
+    <input type="checkbox" id="correctChk">
+    <span class="checkmark"></span>
+  </label>
+
+  <textarea id="code" placeholder="（把解答程式碼貼在這裡）"></textarea>
+
+  <div class="row">
+    <button id="save">Save to Notion</button>
+    <button id="openOptions">⚙️ Settings</button>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

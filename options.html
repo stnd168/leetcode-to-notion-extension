@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Settings</title></head>
+<body style="font-family:Arial;padding:16px;max-width:560px;">
+  <h2>Notion Settings</h2>
+
+  <label>Notion Token</label><br/>
+  <input id="token" type="password" style="width:100%;" placeholder="secret_xxx"><br/><br/>
+
+  <label>Database ID</label><br/>
+  <input id="dbid" style="width:100%;" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"><br/><br/>
+
+  <!-- <label>Default Importance</label><br/>
+  <input id="importance" value="基礎" /><br/><br/> -->
+
+  <!-- <label>Default Review</label><br/>
+  <input id="review" value="need review" /><br/><br/> -->
+
+  <button id="save">💾 Save</button>
+  <button id="test">🔍 Test Connection</button>
+  <span id="msg" style="margin-left:8px;"></span>
+
+  <pre id="testResult" style="margin-top:12px;font-size:12px;color:#555;white-space:pre-wrap;"></pre>
+
+  <script src="options.js"></script>
+</body>
+</html>
