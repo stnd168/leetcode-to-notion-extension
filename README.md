@@ -7,8 +7,8 @@
 ---
 
 ## ✨ 功能
-- 只需在Options 頁面設定 **Notion Token** 與 **Database ID**即可開始使用
-- 自動讀取 LeetCode 題目資訊（標題、難度、Topic、描述），手動保存程式碼
+- 只需完成Notion設定並在插件Options 頁面輸入 **Notion Token** 與 **Database ID**即可開始使用
+- 自動讀取 LeetCode 題目資訊（標題、難度、Topic、問題描述等訊息），手動保存程式碼
 - 一鍵 Save 到 Notion Database
 - UI 正確回答可勾選「Correct」、並選擇 Importance / Review / Language
 - 題目已存在時，自動更新（支援 Times/Correct 累積，統計答對率）
