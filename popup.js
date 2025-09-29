@@ -1,7 +1,7 @@
 // popup.js — MV3 popup script (no Grab).
 // - 顯示題名：僅在網址是 LeetCode 題目時顯示 pageTitle；否則不顯示
 // - keep-alive：與 background 建立 Port 並每 20s ping，避免 worker 被回收
-// - Save：60s 保險逾時 + 進度訊息；
+// - Save：30s 保險逾時 + 進度訊息；
 
 
 const $ = (id) => document.getElementById(id);
@@ -93,7 +93,8 @@ function extractSlug(url) {
           reviewStatus: $("review")?.value || "need review",
           code: $("code")?.value || "",
           language: $("lang")?.value || "c++",
-          correct: isCorrect
+          correct: isCorrect,
+          overwriteContent: !!($("overwriteContentChk") && $("overwriteContentChk").checked) // ← 新增
         };
 
         let responded = false;
@@ -102,7 +103,7 @@ function extractSlug(url) {
             if (statusEl) statusEl.textContent = "⚠️ 儲存較久，請稍候或再試一次（已超過 60 秒）";
             btn.disabled = false; btn.textContent = prevText;
           }
-        }, 45000); // 45s 保險
+        }, 30000); // 30s 保險
 
         chrome.runtime.sendMessage({ action: "saveToNotion", payload }, (resp) => {
           responded = true;
