@@ -393,8 +393,17 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         const updateData = await updateResp.json();
         if (!updateResp.ok) { sendResponse({ ok: false, error: updateData }); return; }
 
-        await deleteAllChildren(pageId, token);
-        if (children.length) await appendChildren(pageId, token, children);
+        // 只有勾選「覆蓋內容」才重建 children；否則不動內容
+        if (p.overwriteContent) {
+          try {
+            await deleteAllChildren(pageId, token);
+            if (children.length) await appendChildren(pageId, token, children);
+          } catch (e) {
+            // 即使覆蓋內容失敗，也把屬性更新結果回傳
+            sendResponse({ ok: false, error: "覆蓋內容失敗：" + String(e) });
+            return;
+          }
+        }
 
         sendResponse({ ok: true, notion: updateData, pageUrl: pageUrlFromNotionCreateResp(updateData) });
       } catch (e) {
