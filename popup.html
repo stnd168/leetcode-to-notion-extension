@@ -42,13 +42,15 @@
   </div>
 
   <!-- Correct 勾選 -->
-  <!-- <label id="chk">
-    <input type="checkbox" id="correctChk" />
-    Correct
-  </label> -->
   <label class="container">Correct
     <input type="checkbox" id="correctChk">
     <span class="checkmark"></span>
+  </label>
+
+  <!-- 覆蓋內容勾選：預設不勾選 -->
+  <label style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+    <input type="checkbox" id="overwriteContentChk" />
+    覆蓋內容（描述 + Code）
   </label>
 
   <textarea id="code" placeholder="（把解答程式碼貼在這裡）"></textarea>
