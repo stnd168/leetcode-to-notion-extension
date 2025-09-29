@@ -12,6 +12,7 @@
 - 一鍵 Save 到 Notion Database
 - UI 正確回答可勾選「Correct」、並選擇 Importance / Review / Language
 - 題目已存在時，自動更新（支援 Times/Correct 累積，統計答對率）
+- 勾選覆蓋決定是否更新 Notion Page內容
 - 會根據Review 狀態自動幫你設定下次複習時間
 
 ---
